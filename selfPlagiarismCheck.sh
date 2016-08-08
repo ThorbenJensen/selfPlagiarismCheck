@@ -34,4 +34,4 @@ for i in `seq 10 -1 4`;
 done
                        
 rm file1.tmp
-rm file1.tmp
+rm file2.tmp
