@@ -2,8 +2,8 @@
 
 export LC_CTYPE=C
 
-file1=paper2d.tex
-file2=paper3.tex
+file1="$1"
+file2="$2"
 
 rm overlap.txt
 cat $file1 | sed '/^%/ d' | tr '\n' ' ' | tr -s " " > file1.tmp
@@ -17,8 +17,6 @@ for i in `seq 10 -1 4`;
     echo "Looking for $i identical words"
     lastone=$((nr - i + 1))
     
-    #for j in `seq 1 1 $lastone`;
-
     j=1
     while [ $j -lt $lastone ]
     do
