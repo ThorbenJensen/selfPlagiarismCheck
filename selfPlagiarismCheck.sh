@@ -35,3 +35,4 @@ done
                        
 rm file1.tmp
 rm file2.tmp
+rm found.tmp
